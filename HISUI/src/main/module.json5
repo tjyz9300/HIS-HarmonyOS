@@ -1,0 +1,55 @@
+{
+  "module": {
+    "name": "HISUI",
+    "type": "entry",
+    "description": "$string:module_desc",
+    "mainElement": "HISUIAbility",
+    "deviceTypes": [
+      "tablet","phone"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      }
+    ],
+    "abilities": [
+      {
+        "name": "HISUIAbility",
+        "srcEntry": "./ets/hisuiability/HISUIAbility.ets",
+        "description": "$string:HISUIAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:HISUIAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "ohos.want.action.home"
+            ]
+          }
+        ]
+      }
+    ],
+    "extensionAbilities": [
+      {
+        "name": "HISUIBackupAbility",
+        "srcEntry": "./ets/hisuibackupability/HISUIBackupAbility.ets",
+        "type": "backup",
+        "exported": false,
+        "metadata": [
+          {
+            "name": "ohos.extension.backup",
+            "resource": "$profile:backup_config"
+          }
+        ],
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "HISUIAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "HISUIAbility_label",
+      "value": "label"
+    }
+  ]
+}

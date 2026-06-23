@@ -1,0 +1,15 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/Login",
+    "pages/SelectDepartment",
+    "pages/SelectDoctor",
+    "pages/SelectTimeSlot",
+    "pages/Profile",
+    "pages/Register",
+    "pages/PatientList",
+    "pages/AddPatient",
+    "pages/SelectPatient",
+    "pages/ConfirmAppointment"
+  ]
+}
